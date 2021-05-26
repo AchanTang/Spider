@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="spider">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.06965 -0.060146 0.00038836"
+        rpy="0 0 0" />
+      <mass
+        value="0.32357" />
+      <inertia
+        ixx="9.1438E-05"
+        ixy="-2.1084E-08"
+        ixz="2.287E-11"
+        iyy="9.6935E-05"
+        iyz="6.371E-06"
+        izz="0.00012302" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1-1">
+    <inertial>
+      <origin
+        xyz="0.0029272 0.0014395 0.028121"
+        rpy="0 0 0" />
+      <mass
+        value="0.016509" />
+      <inertia
+        ixx="4.7513E-06"
+        ixy="-1.1049E-15"
+        ixz="-3.0699E-07"
+        iyy="4.7742E-06"
+        iyz="-1.5671E-10"
+        izz="6.4655E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link1-1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link1-1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1-1"
+    type="revolute">
+    <origin
+      xyz="0.14565 0.0010255 -0.059724"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1-1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link1-2">
+    <inertial>
+      <origin
+        xyz="0.0045584 -0.0039395 -3.9372E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.090281" />
+      <inertia
+        ixx="1.8732E-05"
+        ixy="6.9118E-09"
+        ixz="1.9053E-07"
+        iyy="1.9071E-05"
+        iyz="9.4929E-08"
+        izz="2.0377E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link1-2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link1-2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1-2"
+    type="revolute">
+    <origin
+      xyz="0.0145 0 0.0905"
+      rpy="1.4973 0 0" />
+    <parent
+      link="link1-1" />
+    <child
+      link="link1-2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link1-3">
+    <inertial>
+      <origin
+        xyz="4.81524561196656E-08 -0.001639555290818 0.0391610106458949"
+        rpy="0 0 0" />
+      <mass
+        value="0.0162354598923104" />
+      <inertia
+        ixx="5.70977126449827E-06"
+        ixy="-8.8112790832911E-12"
+        ixz="2.26674237419322E-11"
+        iyy="9.85119727259757E-06"
+        iyz="-5.03809142386347E-08"
+        izz="6.18048965390726E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link1-3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link1-3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1-3"
+    type="revolute">
+    <origin
+      xyz="0.0225 0.018949 0.001395"
+      rpy="-1.5708 -1.4973 -1.5708" />
+    <parent
+      link="link1-2" />
+    <child
+      link="link1-3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link2-1">
+    <inertial>
+      <origin
+        xyz="0.0028787 -0.0013732 -0.028034"
+        rpy="0 0 0" />
+      <mass
+        value="0.01644" />
+      <inertia
+        ixx="4.7506E-06"
+        ixy="-1.5342E-16"
+        ixz="3.0699E-07"
+        iyy="4.7741E-06"
+        iyz="-1.567E-10"
+        izz="6.4649E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link2-1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link2-1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2-1"
+    type="revolute">
+    <origin
+      xyz="0.09365 0.0010255 0.014776"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link2-1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link2-2">
+    <inertial>
+      <origin
+        xyz="0.00456940269336029 -0.0375990154493233 -0.000232293803969774"
+        rpy="0 0 0" />
+      <mass
+        value="0.0900475899194254" />
+      <inertia
+        ixx="1.87431231972947E-05"
+        ixy="-2.09852441088479E-08"
+        ixz="-1.89540352094223E-07"
+        iyy="1.91013032023302E-05"
+        iyz="1.89445374590494E-07"
+        izz="2.03522492142479E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link2-2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/link2-2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2-2"
+    type="revolute">
+    <origin
+      xyz="0.0145 0 -0.049"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link2-1" />
+    <child
+      link="link2-2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="l2-3">
+    <inertial>
+      <origin
+        xyz="4.81524561612989E-08 -0.00163955529081801 0.0391610106458949"
+        rpy="0 0 0" />
+      <mass
+        value="0.0162354598923105" />
+      <inertia
+        ixx="5.70977126449829E-06"
+        ixy="-8.8112790834674E-12"
+        ixz="2.26674237541185E-11"
+        iyy="9.8511972725976E-06"
+        iyz="-5.03809142386373E-08"
+        izz="6.18048965390729E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l2-3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l2-3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2-3"
+    type="revolute">
+    <origin
+      xyz="0.0225 -0.0605 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="link2-2" />
+    <child
+      link="l2-3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link3-1">
+    <inertial>
+      <origin
+        xyz="0.0029272 -0.0014395 -0.028121"
+        rpy="0 0 0" />
+      <mass
+        value="0.016509" />
+      <inertia
+        ixx="4.7513E-06"
+        ixy="1.105E-15"
+        ixz="3.0699E-07"
+        iyy="4.7742E-06"
+        iyz="-1.5671E-10"
+        izz="6.4655E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/Link3-1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/Link3-1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3-1"
+    type="revolute">
+    <origin
+      xyz="0.04565 0.0010255 0.014776"
+      rpy="-3.1416 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link3-1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="l3-2">
+    <inertial>
+      <origin
+        xyz="0.00455554834605721 -0.0375867899880844 -0.000250865030354555"
+        rpy="0 0 0" />
+      <mass
+        value="0.0899979291999051" />
+      <inertia
+        ixx="1.87172016777334E-05"
+        ixy="-2.08817053695041E-08"
+        ixz="-1.89502932188281E-07"
+        iyy="1.9077205931428E-05"
+        iyz="1.89503836208455E-07"
+        izz="2.03553773315109E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l3-2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l3-2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3-2"
+    type="revolute">
+    <origin
+      xyz="0.0145 0 -0.049"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link3-1" />
+    <child
+      link="l3-2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="l3-3">
+    <inertial>
+      <origin
+        xyz="4.81524561474211E-08 -0.00163955529081804 0.0391610106458949"
+        rpy="0 0 0" />
+      <mass
+        value="0.0162354598923105" />
+      <inertia
+        ixx="5.70977126449829E-06"
+        ixy="-8.8112790828747E-12"
+        ixz="2.26674237565265E-11"
+        iyy="9.8511972725976E-06"
+        iyz="-5.03809142386341E-08"
+        izz="6.18048965390729E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l3-3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l3-3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3-3"
+    type="revolute">
+    <origin
+      xyz="0.0225 -0.0605 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="l3-2" />
+    <child
+      link="l3-3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link1'-1">
+    <inertial>
+      <origin
+        xyz="0.0029272 0.0014395 0.028121"
+        rpy="0 0 0" />
+      <mass
+        value="0.016509" />
+      <inertia
+        ixx="4.7513E-06"
+        ixy="5.3643E-15"
+        ixz="-3.0699E-07"
+        iyy="4.7742E-06"
+        iyz="-1.5674E-10"
+        izz="6.4655E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/Link1'-1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/Link1'-1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j1'-1"
+    type="revolute">
+    <origin
+      xyz="-0.0063504 0.0010255 -0.059724"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1'-1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="l1'-2">
+    <inertial>
+      <origin
+        xyz="0.0229772283825683 -0.0179454345262804 0.00026282191392938"
+        rpy="0 0 0" />
+      <mass
+        value="0.0903572601752896" />
+      <inertia
+        ixx="1.91049081720944E-05"
+        ixy="-2.08818818831712E-08"
+        ixz="-1.89504089823545E-07"
+        iyy="1.87449036322938E-05"
+        iyz="1.89503857894319E-07"
+        izz="2.03556401861555E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l1'-2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l1'-2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j1'-2"
+    type="revolute">
+    <origin
+      xyz="0.037 0 0.1095"
+      rpy="3.1416 1.5708 1.5708" />
+    <parent
+      link="Link1'-1" />
+    <child
+      link="l1'-2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="l1'-3">
+    <inertial>
+      <origin
+        xyz="4.81524560433377E-08 -0.00163955529081773 0.0391610106458952"
+        rpy="0 0 0" />
+      <mass
+        value="0.0162354598923104" />
+      <inertia
+        ixx="5.70977126449827E-06"
+        ixy="-8.81127908282785E-12"
+        ixz="2.26674237478767E-11"
+        iyy="9.85119727259758E-06"
+        iyz="-5.03809142386411E-08"
+        izz="6.18048965390728E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l1'-3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l1'-3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l1'-3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="l1'-2" />
+    <child
+      link="l1'-3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link3'-1">
+    <inertial>
+      <origin
+        xyz="0.0028787 0.0013732 0.028034"
+        rpy="0 0 0" />
+      <mass
+        value="0.01644" />
+      <inertia
+        ixx="4.7506E-06"
+        ixy="1.5342E-16"
+        ixz="-3.0699E-07"
+        iyy="4.7741E-06"
+        iyz="-1.567E-10"
+        izz="6.4649E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/Link3'-1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/Link3'-1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3'-1"
+    type="revolute">
+    <origin
+      xyz="0.04565 0.0010255 -0.13422"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link3'-1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="l3'-2">
+    <inertial>
+      <origin
+        xyz="0.00455456547370052 -0.00397722838259307 0.000262821913908251"
+        rpy="0 0 0" />
+      <mass
+        value="0.0903572601751924" />
+      <inertia
+        ixx="1.87449036322931E-05"
+        ixy="2.08818818831496E-08"
+        ixz="1.89503857894261E-07"
+        iyy="1.91049081720936E-05"
+        iyz="1.8950408982354E-07"
+        izz="2.03556401861555E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l3'-2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l3'-2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3'-2"
+    type="revolute">
+    <origin
+      xyz="0.0145 0 0.0905"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link3'-1" />
+    <child
+      link="l3'-2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="l3'-3">
+    <inertial>
+      <origin
+        xyz="4.81524561335434E-08 -0.00163955529081802 0.0391610106458949"
+        rpy="0 0 0" />
+      <mass
+        value="0.0162354598923105" />
+      <inertia
+        ixx="5.70977126449827E-06"
+        ixy="-8.81127908397801E-12"
+        ixz="2.26674237422794E-11"
+        iyy="9.85119727259758E-06"
+        iyz="-5.03809142386363E-08"
+        izz="6.18048965390729E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l3'-3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l3'-3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3'-3"
+    type="revolute">
+    <origin
+      xyz="0.0225 0.019 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="l3'-2" />
+    <child
+      link="l3'-3" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link2'-1">
+    <inertial>
+      <origin
+        xyz="0.0029272 0.0014395 0.028121"
+        rpy="0 0 0" />
+      <mass
+        value="0.016509" />
+      <inertia
+        ixx="4.7513E-06"
+        ixy="-1.1049E-15"
+        ixz="-3.0699E-07"
+        iyy="4.7742E-06"
+        iyz="-1.5671E-10"
+        izz="6.4655E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/Link2'-1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/Link2'-1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2'-1"
+    type="revolute">
+    <origin
+      xyz="0.09365 0.0010255 -0.13422"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link2'-1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="l2'-2">
+    <inertial>
+      <origin
+        xyz="0.0229286148735609 -0.017907446666878 0.000265416209779906"
+        rpy="0 0 0" />
+      <mass
+        value="0.0905488366619493" />
+      <inertia
+        ixx="1.9105855921183E-05"
+        ixy="-2.08818818831934E-08"
+        ixz="-1.89504089823648E-07"
+        iyy="1.87458477992373E-05"
+        iyz="1.89498695110175E-07"
+        izz="2.03564751299157E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l2'-2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l2'-2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2'-2"
+    type="revolute">
+    <origin
+      xyz="0.037 0 0.1095"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="Link2'-1" />
+    <child
+      link="l2'-2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="l2'-3">
+    <inertial>
+      <origin
+        xyz="4.81524556616986E-08 -0.00163955529081805 0.0391610106458948"
+        rpy="0 0 0" />
+      <mass
+        value="0.0162354598923104" />
+      <inertia
+        ixx="5.70977126449828E-06"
+        ixy="-8.81127908249813E-12"
+        ixz="2.26674237535988E-11"
+        iyy="9.85119727259758E-06"
+        iyz="-5.03809142386312E-08"
+        izz="6.18048965390728E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l2'-3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider/meshes/l2'-3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2'-3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="l2'-2" />
+    <child
+      link="l2'-3" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+</robot>
